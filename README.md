@@ -1,4 +1,17 @@
 
+## Why
+Im trying to setup an enviroment that any developer can clone, install docker and have the same enviroment as everyone else, and not need NodeJS on their local machine either.  Building Wordpress sites, which use SASS, the current developer uses NodeJS only to process SASS, minifiy code etc, ad also uses Gulp.
+
+If someone knows how to do this, please update whatever you need, this is a demo site anyway.
+
+I tried running : 
+docker exec -it "wordpress-docker-sass_node_1" npm run install-dependencies 
+
+
+## #############################################################################################
+
+
+
 
 ## Requeriments
 
