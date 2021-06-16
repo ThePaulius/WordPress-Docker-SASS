@@ -44,5 +44,18 @@ services:
       MYSQL_DATABASE: "${DB_NAME}"
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
 
+  node:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "8081"
+    command: "npm start"
+    
+
 volumes:
   db_data:
